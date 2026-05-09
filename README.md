@@ -51,6 +51,10 @@ Abre un terminal en la carpeta del proyecto y ejecuta:
 ./ExportarCodigo.bat
 ```
 
+## Captura de la ejecución
+
+![Captura de ejecución](screenshots/usage-example.png)
+
 ## Consejos
 
 - Mantén `ExportarCodigo.bat` y `ExportarCodigo.ps1` juntos en la misma carpeta.
