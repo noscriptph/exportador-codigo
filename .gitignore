@@ -1,0 +1,29 @@
+# Ignorar archivos de salida
+Codigo_Unificado.txt
+
+# Ignorar artefactos comunes de Windows / desarrollo
+Thumbs.db
+Desktop.ini
+*.log
+
+# Ignorar carpetas de dependencias y compilación
+node_modules/
+dist/
+build/
+obj/
+bin/
+
+# Ignorar configuraciones de IDE
+.vscode/
+.vs/
+
+# Ignorar Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar archivos temporales
+*.tmp
+*.swp
+*.bak
