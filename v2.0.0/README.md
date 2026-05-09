@@ -13,9 +13,9 @@ Esta versión agrega una opción instalada en el menú contextual de Windows.
 
 ## Instalación
 
-1. Abre la carpeta `v2.0.0`.
-2. Ejecuta `Install-ContextMenu.bat` con doble clic.
-3. Si aparece un mensaje de confirmación, el menú contextual quedará instalado.
+1. Ejecuta `exportador-codigo-2.0.0-installer.exe` desde tu escritorio.
+2. Confirma la instalación cuando aparezca el diálogo.
+3. Los archivos se instalarán en `C:\Program Files\Exportador Codigo`.
 
 ## Uso
 
@@ -26,7 +26,11 @@ Esta versión agrega una opción instalada en el menú contextual de Windows.
 
 ## Desinstalación
 
-Ejecuta `Uninstall-ContextMenu.bat` para quitar la opción del menú contextual.
+Ejecuta `C:\Program Files\Exportador Codigo\uninstaller.exe` o:
+
+1. Abre la carpeta de instalación `C:\Program Files\Exportador Codigo`.
+2. Ejecuta `uninstaller.exe`.
+3. Confirma la desinstalación.
 
 ## Requisitos
 

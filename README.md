@@ -30,16 +30,23 @@ Este repositorio contiene dos versiones del proyecto:
 - `v1.0.0` — versión original estable.
 - `v2.0.0` — versión con integración al menú contextual.
 
-## Paquete instalable
+## Instalación
 
-Se crea un paquete 7z con la versión 2.0.0:
+El instalador está disponible en tu escritorio:
 
-- `exportador-codigo-2.0.0.7z`
-- `exportador-codigo-2.0.0-installer.exe`
+- **`exportador-codigo-2.0.0-installer.exe`**
 
-Al extraer el paquete, ejecuta `Install-ContextMenu.bat` desde la carpeta `v2.0.0`.
+Este instalador:
+1. Instala los archivos en `C:\Program Files\Exportador Codigo`
+2. Registra la opción `Exportar código` en el menú contextual
+3. Crea un desinstalador automático
 
-Para instalar directamente desde el EXE, ejecuta `exportador-codigo-2.0.0-installer.exe`.
+## Paquetes alternativos
+
+También están disponibles:
+
+- `exportador-codigo-2.0.0.7z` — paquete comprimido
+- `v2.0.0/uninstaller.exe` — desinstalador independiente
 
 ## Notas
 

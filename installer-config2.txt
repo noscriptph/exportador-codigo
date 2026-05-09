@@ -1,0 +1,5 @@
+;!@Install@!UTF-8!
+Title="Exportador Código 2.0.0"
+BeginPrompt="Se instalara Exportador Código. ¿Deseas continuar?"
+RunProgram="v2.0.0\InstallInit.bat"
+;!@InstallEnd@!
