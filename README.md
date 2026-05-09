@@ -35,8 +35,11 @@ Este repositorio contiene dos versiones del proyecto:
 Se crea un paquete 7z con la versión 2.0.0:
 
 - `exportador-codigo-2.0.0.7z`
+- `exportador-codigo-2.0.0-installer.exe`
 
-Al extraerlo, ejecuta `Install-ContextMenu.bat` desde la carpeta `v2.0.0`.
+Al extraer el paquete, ejecuta `Install-ContextMenu.bat` desde la carpeta `v2.0.0`.
+
+Para instalar directamente desde el EXE, ejecuta `exportador-codigo-2.0.0-installer.exe`.
 
 ## Notas
 

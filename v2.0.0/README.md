@@ -39,6 +39,12 @@ También puedes usar el paquete `exportador-codigo-2.0.0.7z` desde la raíz del 
 
 Al extraer el paquete, ejecuta `Install-ContextMenu.bat` desde la carpeta `v2.0.0`.
 
+También existe un instalador EXE directo:
+
+- `exportador-codigo-2.0.0-installer.exe`
+
+Ejecuta ese EXE para instalar la opción `Exportar código` directamente sin extraer.
+
 ## Consideraciones
 
 El archivo resultante se guarda en la carpeta seleccionada y se sobrescribe si ya existe.
