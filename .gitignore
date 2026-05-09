@@ -1,5 +1,5 @@
 # Ignorar archivos de salida
-Codigo_Unificado.txt
+**/Codigo_Unificado.txt
 
 # Ignorar artefactos comunes de Windows / desarrollo
 Thumbs.db

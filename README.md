@@ -1,66 +1,43 @@
-# CodeTranscriptor
+# Exportador de Código
 
-**CodeTranscriptor** es una herramienta ligera para Windows que recorre carpetas de código y genera un único archivo de texto con todo el contenido exportado.
+Este repositorio contiene dos versiones del proyecto:
 
-## Qué hace
+- `v1.0.0` — versión estable original que funciona con `ExportarCodigo.bat` y `ExportarCodigo.ps1`.
+- `v2.0.0` — nueva versión que instala una opción en el menú contextual de Windows.
 
-- Recorrer carpetas de forma recursiva
-- Exportar archivos de código y texto comunes a un solo archivo (`Codigo_Unificado.txt`)
-- Excluir carpetas de ruido como `node_modules`, `.git`, `bin`, `obj`, `dist`, `build`, `.vs`, `.vscode`, `packages`, `vendor`, `__pycache__`
-- Evitar incluir el archivo de salida en la exportación
-- Manejar errores por archivo sin detener la ejecución
+## Estructura del repositorio
 
-## Archivos del proyecto
+- `v1.0.0/` — proyecto actual preservado y estable.
+- `v2.0.0/` — nueva versión con instalador de menú contextual.
 
-- `ExportarCodigo.bat` — lanzador principal para Windows
-- `ExportarCodigo.ps1` — script PowerShell que hace el trabajo real
-- `README.md` — instrucciones de uso y explicación
-- `.gitignore` — archivos que no deben subirse al repositorio
+## Cómo usar cada versión
 
-## Cómo usarlo (paso a paso)
+### v1.0.0
 
-1. Copia `ExportarCodigo.bat` y `ExportarCodigo.ps1` al directorio raíz de tu proyecto de código.
-2. Abre el explorador de Windows y navega a esa carpeta.
-3. Ejecuta `ExportarCodigo.bat` con doble clic o desde un terminal.
-4. Se generará `Codigo_Unificado.txt` en la misma carpeta.
+1. Entra en la carpeta `v1.0.0`.
+2. Ejecuta `ExportarCodigo.bat`.
+3. Se genera `Codigo_Unificado.txt` en la carpeta en la que ejecutes el script.
 
-> Si el script no puede escribir en `%TEMP%`, revisa permisos o ejecuta desde un usuario con permisos normales en Windows.
+### v2.0.0
 
-## Resultado final
+1. Entra en la carpeta `v2.0.0`.
+2. Ejecuta `Install-ContextMenu.bat` o `Install-ContextMenu.ps1`.
+3. Haz clic derecho en cualquier carpeta o fondo de carpeta y elige `Exportar código`.
+4. Se generará `Codigo_Unificado.txt` dentro de la carpeta seleccionada.
 
-- `Codigo_Unificado.txt` contiene la transcripción de los archivos escaneados.
-- Puedes borrar `Codigo_Unificado.txt` en cualquier momento; no es necesario para el funcionamiento futuro del proyecto.
+## Versiones
 
-## Contenido incluido
+- `v1.0.0` — versión original estable.
+- `v2.0.0` — versión con integración al menú contextual.
 
-El exportador procesa archivos con estas extensiones:
+## Paquete instalable
 
-`.ino, .c, .cpp, .h, .hpp, .py, .js, .ts, .jsx, .tsx, .html, .htm, .css, .scss, .json, .xml, .yml, .yaml, .bat, .cmd, .ps1, .java, .cs, .vb, .php, .rb, .go, .rs, .sql, .sh, .ini, .cfg, .conf, .txt, .md`
+Se crea un paquete 7z con la versión 2.0.0:
 
-## Qué se excluye
+- `exportador-codigo-2.0.0.7z`
 
-- Archivos dentro de carpetas basura listadas arriba
-- El propio archivo de salida `Codigo_Unificado.txt`
-- Cualquier archivo cuyo nombre empiece con `Codigo_Unificado`
+Al extraerlo, ejecuta `Install-ContextMenu.bat` desde la carpeta `v2.0.0`.
 
-## Ejemplo rápido
+## Notas
 
-Abre un terminal en la carpeta del proyecto y ejecuta:
-
-```powershell
-./ExportarCodigo.bat
-```
-
-## Captura de la ejecución
-
-![Captura de ejecución](screenshots/usage-example.png)
-
-## Consejos
-
-- Mantén `ExportarCodigo.bat` y `ExportarCodigo.ps1` juntos en la misma carpeta.
-- Si necesitas agregar más extensiones, edita la lista de `$extensions` en `ExportarCodigo.ps1`.
-- Si quieres excluir carpetas adicionales, añade sus nombres a `$excludedDirs`.
-
-## Sobre el proyecto
-
-Este proyecto se construyó usando GitHub Copilot y ChatGPT para que tengas una herramienta rápida de exportación de código.
+La versión original está preservada exactamente como estaba funcionando. La nueva versión ofrece instalación y desinstalación del menú contextual sin modificar la versión actual.
