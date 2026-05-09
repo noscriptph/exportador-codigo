@@ -1,8 +1,8 @@
-# Exportador de Código v2.0.0
+# Exportador de Código v1.5.0
 
 Esta versión agrega una opción instalada en el menú contextual de Windows.
 
-## Archivos de la versión 2.0.0
+## Archivos de la versión 1.5.0
 
 - `ExportarCodigoContextMenu.ps1` — exporta el código del directorio seleccionado y genera `Codigo_Unificado.txt`.
 - `Install-ContextMenu.ps1` — instala la opción en el menú contextual.
@@ -13,7 +13,7 @@ Esta versión agrega una opción instalada en el menú contextual de Windows.
 
 ## Instalación
 
-1. Ejecuta `exportador-codigo-2.0.0-installer.exe` desde tu escritorio.
+1. Ejecuta `exportador-codigo-1.5.0-installer.exe` desde tu escritorio.
 2. Confirma la instalación cuando aparezca el diálogo.
 3. Los archivos se instalarán en `C:\Program Files\Exportador Codigo`.
 
@@ -39,13 +39,13 @@ Ejecuta `C:\Program Files\Exportador Codigo\uninstaller.exe` o:
 
 ## Paquete instalable
 
-También puedes usar el paquete `exportador-codigo-2.0.0.7z` desde la raíz del repositorio.
+También puedes usar el paquete `exportador-codigo-1.5.0.7z` desde la raíz del repositorio.
 
-Al extraer el paquete, ejecuta `Install-ContextMenu.bat` desde la carpeta `v2.0.0`.
+Al extraer el paquete, ejecuta `Install-ContextMenu.bat` desde la carpeta `v1.5.0`.
 
 También existe un instalador EXE directo:
 
-- `exportador-codigo-2.0.0-installer.exe`
+- `exportador-codigo-1.5.0-installer.exe`
 
 Ejecuta ese EXE para instalar la opción `Exportar código` directamente sin extraer.
 
