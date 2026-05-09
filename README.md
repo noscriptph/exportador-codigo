@@ -65,10 +65,14 @@ Abre un terminal en la carpeta del proyecto y ejecuta:
 
 Este proyecto se construyó usando GitHub Copilot y ChatGPT para que tengas una herramienta rápida de exportación de código.
 
-## Siguiente paso para GitHub
+## Estado del repositorio local
 
-1. Crea un repositorio en tu cuenta de GitHub.
-2. Copia los archivos al directorio del repositorio.
-3. Inicializa Git y sube los cambios.
+- El repositorio está inicializado localmente con commits.
+- Probé la conexión SSH a GitHub y funcionó con tu usuario `noscriptph`.
+- El remoto local ya está configurado como `git@github.com:noscriptph/exportador-codigo.git`.
 
-Si quieres, puedo ayudarte a crear el repositorio remoto cuando tengas un token o acceso a GitHub CLI.
+Próximo paso: crea el repositorio remoto `exportador-codigo` en GitHub y luego ejecuta:
+
+```powershell
+git push -u origin master --tags
+```
